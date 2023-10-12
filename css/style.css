@@ -217,12 +217,12 @@ main{
     background: var(--main-color);
     color: white;
     font-size: 1.2rem;
-
+    margin-top:100px;
     padding-top: 50px;
 }
 
 .foot{
-    margin-top:100px;
+    
     display: flex;
     justify-content: space-between;
 }
