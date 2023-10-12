@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root{
+    font-size: 22px;
+    --main-color: #FFBD59;
+    --light-orange:#FFE7C2;
+    --dark-orange:#FF914D;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.6em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+hr{
+    height: 12px;
+    border: none;
+    background-color: var(--main-color);
+
+    margin-bottom: 40px;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.small_txt{
+    font-size: 0.6rem;
+}
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.top{
+    background: var(--main-color);
+}
+
+header{
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+}
+
+main{
+    background-color: white;
+    background: url("../images/background_pattern.png") repeat-y;
+    background-size: contain;
+
+    margin: 0;
+}
+
+.logo{
+    width: 120px;
+}
+
+.tree{
+    background: url(../images/header-background.png) no-repeat;
+    background-size: cover;
+}
+
+.firstscreen{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.firstscreen>p{
+    margin-top: 40px;
+    width: 50%;
+    font-size: 1.2;
+}
+
+.shine-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5% 7%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--main-color);
+    border-radius: 40px;
+    color: white;
+    transition: .2s ease-in-out;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .shine-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 80px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+  }
+
+  .shine-button:hover {
+    background: var(--dark-orange);
+    color: #fff;
+  }
+
+  .shine-button:hover:before {
+    left: 600px;
+    transition: .8s ease-in-out;
+  }
+
+.lowerscreen {
+    padding-top: 100px;
+}
+
+.orange_txt{
+    color: var(--dark-orange);
+    font-weight: 700;
+}
+
+.title{
+    width: 35%;
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.subject{
+    height: 120px;
+    width: 30%;
+}
+
+.group{
+    background: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 49%;
+
+    margin-bottom: 20px;
+}
+
+.teacher{
+    width: 30%;
+}
+
+.name{
+    margin: 20px;
+}
+
+.aligncenter{
+    text-align: center;
+}
+
+.gallery{
+    width: 30%;
+    height: 430px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.gallery img{
+    border-radius: 20px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+  footer{
+    background: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+
+    padding-top: 50px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footlogo {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+  footer ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+}
+
+footer ul li a img{
+    height: 60px;
+}
+ 
+@media screen and (max-width: 768px) {
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 90%;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .flexrow{
+        flex-direction: column;
+    }
+
+    .gallery{
+        width: auto;
+    }
+
+    .teacher{
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:576px){
+    header{
+        background: none;
+    }
+
+    footer{
+        background-position: center;
+    }
+
+    .social ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
