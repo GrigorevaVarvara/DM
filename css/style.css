@@ -229,7 +229,6 @@ main{
 
 .footlogo {
     width: 25%;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,6 +277,11 @@ footer ul li a img{
     .teacher{
         width: auto;
         margin-bottom: 20px;
+    }
+
+    .foot{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
